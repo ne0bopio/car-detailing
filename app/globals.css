@@ -1,6 +1,20 @@
 @import "tailwindcss";
 
-body {
-  background-color: #131c95;
+@theme {
+  /* Your Electric Palette */
+  --color-brand-navy: #000831;
+  --color-brand-green: #00d973;
+  --color-brand-orange: #FA2B00;
+
+  /* Typography */
+  --font-heading: "Geist Sans", sans-serif;
+  
+  /* You can also define custom animations or shadows here */
+  --shadow-glow: 0 0 20px rgba(0, 217, 115, 0.3);
 }
 
+/* Base resets or global styles can stay below */
+:root {
+  background-color: var(--color-brand-navy);
+  color: white;
+}
